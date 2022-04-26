@@ -89,7 +89,11 @@ header nav a:hover {
 }
 .filme-principal .container {
     width: 65%;
+    margin-left: 15px;
 }
+
+
+
 /*!  </Destaque principal  */
 
 /* * <Cards Carrosel  */
