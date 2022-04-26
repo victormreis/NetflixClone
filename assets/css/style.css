@@ -1,0 +1,122 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+/* * < reset global  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ! </ reset global */
+
+/* * <base  */
+body {
+  background: var(--preto);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", "Times";
+  margin-left: 5px;
+  font-size: 2rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #ffff;
+}
+/*!  <base  */
+
+/* * Destaque principal */
+
+.filme-principal {
+  font-size: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imagens/pontoCego.jpg");
+
+  background-size: cover;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 5px;
+}
+.filme-principal .container {
+    width: 65%;
+}
+/*!  </Destaque principal  */
+
+/* * <Cards Carrosel  */
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*!  </Cards Carrosel  */
+
+/* * <Responsive */
+
+@media (max-width: 780px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 7px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1000px){
+    .descricao{
+        width: 50%;
+    }
+}
