@@ -1,0 +1,42 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+Body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--preto) !important;
+}
+
+.primeiro-quadro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.514)),
+    url("../fundo-home.jpg");
+  background-size: cover;
+}
+
+.btn-idioma {
+  background-color: transparent !important;
+  font: bold;
+}
+
+.logo-home {
+  color: var(--vermelho);
+  font: bold 2rem arial;
+}
+
+.texto-branco {
+  color: white;
+}
+.btn-go {
+  background: var(--vermelho) !important;
+  padding: 150px;
+  color: white !important;
+  border: none;
+}
+
+.linha hr {
+  border: 5px solid rgba(122, 122, 122, 0.897);
+  margin: 0;
+}

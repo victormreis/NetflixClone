@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- *owl css -->
-    <link rel="stylesheet" href="assets/css/owl/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VictorFlix</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid primeiro-quadro">
+      <!-- * inicio Header -->
+      <header class="d-flex justify-content-between align-items-center ">
+        <h1 class="logo-home">NETFLIX</h1>        
+        <div class="d-flex">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle btn-idioma m-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Portugês</button >
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Portugês</a></li>
+              <li><a class="dropdown-item" href="#">English</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <button type="button" class="btn  m-2 btn-go " onclick="entrar()">Entrar</button>
+          </div>
+        </div> 
+      </header>
+      <!--  ! fim header  -->
+
+      <!-- * inicio  do conteudo do primeiro-quadro home -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 texto-branco text-center">
+            <h4 class="mt-5">Filmes, Séries e Muito Mais. <br> Sem limites.</h4>
+            <h5>Assista onde quiser. Cancele quando quiser.</h5>
+            <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+          </div>
         </div>
-    </header>
- <!-- *< Destaque > -->
-    <main>
-        <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo"> Ponto Cego </h3>
-                <p class="descricao" >Misteriosa mulher é encontrada na Times Square, sem quaisquer lembranças de quem ela é e de como chegou ali. As únicas pistas que ela possui são as tatuagens que cobrem todo o seu corpo. Um agente do FBI passa a ajudá-la enquanto buscam a verdade.</p>
-                <div class="botoes">                    
-                    <button role="button" class="botao">
-                        <i class="fa-solid fa-play"></i>
-                        ASSISTIR AGORA
-                        
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fa-solid fa-circle-info"></i>
-                        MAIS INFORMAÇÕES
-                    </button>
+        <div class="row d-flex justify-content-center ">
+          <div class="col-md-10 p-0">
+            <div class="email">
+              <form>
+                <div class="">            
+                  <input type="email" class="form-control mt-3" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="txt-email" class="inputError" data-uia="field-email+error"></div>
                 </div>
             </div>
+          </div>
+          <div class="col-md-2 p-0 mb-5">
+            <button type="button" class="btn  btn-md align-self-center btn-go  mb-5 w-100 mt-3 " id="btn-vamosLa" onclick="entrar()">Vamos lá></button>
+          </div>
         </div>
-    </main>
-    <hr>   
- <!-- ! </ Destaque > -->
-  <!-- *< Carrousel com Jquery > -->
-  <div class="carrosel-filmes">
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/elite.jpg" alt="Capa da Serie Elite">
-        </div>
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/asdf.jpg" alt="Capa de Sem saida">
-        </div>
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/chicacoMed.jpg" alt="Capa da Chicago Med">
-        </div>
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/greys.jpg" alt="Capa da Serie Greys Anatomy">
-        </div>
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/listaNegra.jpg" alt="Capa da Serie Lista negra">
-        </div>
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/lucifer.jpg" alt="Capa da Serie Lucifer">
-        </div>
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/megalodon.jpg" alt="Capa da Serie megalodon">
-        </div>
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/peakyBlinders.jpg" alt="Capa da Serie peakyBlinders">
-        </div>
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/sonic.jpg" alt="Capa de Sonic">
-        </div>
-        <div class="item">
-            <img class="box-filme" src="assets/imagens/twd.jpg" alt="Capa da Serie The walking Dead">
-        </div>
-        
-    </div>
-  </div>
+      </div>
+    </div>   
 
-    <script src="https://kit.fontawesome.com/3f877f53af.js" crossorigin="anonymous"></script>
-    <script src="assets/js/owl/jquery.min.js"></script>
-    <script src="assets/js/owl/owl.carousel.min.js"></script>
-    <script src="assets/js/owl/setup.js"></script>
-</body>
+    <div class="linha">
+      <hr>
+    </div>
+      <!-- * Inicio JumboTron segundo Quadro -->
+
+    <div class="container-fluid mt-5">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-6">
+  
+          <div class="jumbotron jumbotron-fluid">
+                  <div class="container text-center">
+                    <h1 class="display-4 texto-branco">Aproveite na TV.</h1>
+                    <p class="lead texto-branco">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+                  </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="primeiro-quadro w-100" src="assets/imagens/tvFundo.png "  alt="">
+        </div>
+      </div>
+    </div>  
+    <div class="linha">
+      <hr>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
